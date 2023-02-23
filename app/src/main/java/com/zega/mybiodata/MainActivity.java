@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        tvUsername = findViewById(R.id.tv_username);
+        btnLogout = findViewById(R.id.btn_loguot);
+
         if (Utilities.isLogin(this, "xUsername")) {
             Intent Intent = new Intent(this, LoginActivity.class);
             startActivity(Intent);
