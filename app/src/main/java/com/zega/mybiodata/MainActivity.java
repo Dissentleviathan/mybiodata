@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         tvUsername = findViewById(R.id.tv_username);
         btnLogout = findViewById(R.id.btn_loguot);
 
-        if (Utilities.isLogin(this, "xUsername")) {
+        if (!utilities.isLogin(this, "xUsername")) {
             Intent Intent = new Intent(this, LoginActivity.class);
             startActivity(Intent);
             finish();
